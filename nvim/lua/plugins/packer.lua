@@ -27,6 +27,7 @@ return packer.startup(function()
     use("vim-airline/vim-airline")
     use("junegunn/fzf")
     use("junegunn/fzf.vim")
+    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
     if PACKER_BOOTSTRAP then
         packer.sync()

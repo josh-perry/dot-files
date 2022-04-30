@@ -1,4 +1,5 @@
 require("plugins.packer")
+require("plugins.treesitter")
 require("colorscheme")
 
 vim.opt.number = true
