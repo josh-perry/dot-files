@@ -26,6 +26,7 @@ return packer.startup(function()
     use("ntpeters/vim-better-whitespace")
     use("vim-airline/vim-airline")
     use("junegunn/fzf")
+    use("junegunn/fzf.vim")
 
     if PACKER_BOOTSTRAP then
         packer.sync()
