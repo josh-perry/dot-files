@@ -1,0 +1,24 @@
+separator_block_width=15
+markup=none
+
+[mediaplayer]
+label=♬ 
+command=~/.config/i3blocks/mediaplayer/mediaplayer
+instance=spotify
+interval=5
+signal=10
+min_width=150
+
+[volume]
+command=~/.config/i3blocks/volume/volume
+label=♪ 
+interval=once
+signal=10
+min_width=50
+align=center
+
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+min_width=150
+align=center
