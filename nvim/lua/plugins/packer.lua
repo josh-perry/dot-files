@@ -28,6 +28,7 @@ return packer.startup(function()
     use("junegunn/fzf")
     use("junegunn/fzf.vim")
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    use("leafo/moonscript-vim")
 
     if PACKER_BOOTSTRAP then
         packer.sync()
