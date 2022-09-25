@@ -5,6 +5,7 @@ end
 
 local installed_languages = {
     "lua",
+    "json"
 }
 
 configs.setup({
