@@ -30,6 +30,7 @@ return packer.startup(function()
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("yuki-yano/fzf-preview.vim")
     use("leafo/moonscript-vim")
+    use("mfussenegger/nvim-lint")
 
     if PACKER_BOOTSTRAP then
         packer.sync()

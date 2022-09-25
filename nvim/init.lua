@@ -1,5 +1,6 @@
 require("plugins.packer")
 require("plugins.treesitter")
+require("plugins.nvim-lint")
 require("colorscheme")
 
 vim.opt.number = true
@@ -18,3 +19,9 @@ for keyType, t in pairs(keys) do
         vim.api.nvim_set_keymap(keyType, k, v, { noremap = false, silent = false })
     end
 end
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    callback = function()
+        require("lint").try_lint()
+    end,
+})
