@@ -32,6 +32,7 @@ return packer.startup(function()
     use("leafo/moonscript-vim")
     use("editorconfig/editorconfig-vim")
     use("mfussenegger/nvim-lint")
+    use("tpope/vim-commentary")
 
     if PACKER_BOOTSTRAP then
         packer.sync()
